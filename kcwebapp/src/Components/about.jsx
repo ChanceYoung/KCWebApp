@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState} from "react";
+import APIService from "../Services/APIService";
 
-class AboutPage extends Component{
-    render(){
-        return(
-            <>
-                <h1>This is the about page</h1>
-            </>
-        )
-    }
+//class AboutPage extends Component{
+const AboutPage = () => {
+    const [Message,setMessage] = useState("");
+    useEffect(()=>{
+        let apiservice = new APIService();
+        apiservice.GetRoot().then(response => setMessage(response));
+    },[Message])
+    return(
+        <>
+            <h1>{Message}</h1>
+        </>
+    )
 }
 
 export default AboutPage;
