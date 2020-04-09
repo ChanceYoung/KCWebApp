@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --seafoam: #6EFFBE;
+    --grey: #D4D4D4;
+    --dark-grey:#333;
+  }
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--dark-grey);
+  }
+  
+  .nav li {
+    float: left;
+  }
+  
+  
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav li .home{
+    font-family: 'Kaushan Script', cursive;
+    color: var(--seafoam);
+  }
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  .nav li a:hover {
+    background-color: #111;
+    color:var(--seafoam);
+  }
+  
